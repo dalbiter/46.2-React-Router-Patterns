@@ -1,0 +1,14 @@
+.FoodNav {
+    background-color: darkslateblue;
+    padding: 1rem;  
+}
+
+.FoodNav a {
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: white;
+}
+
+.FoodNav a.active {
+    color: darkgray;
+}
