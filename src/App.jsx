@@ -13,10 +13,11 @@ function App() {
       <BrowserRouter>
         <FoodNav />
         <Routes>
-          <Route path="/food/burrito" element={<Food name="burrito" />} />
+          <Route path="/food/:name" element={<Food />} />
+          {/* <Route path="/food/burrito" element={<Food name="burrito" />} />
           <Route path="/food/salad" element={<Food name="salad" />} />
           <Route path="/food/sushi" element={<Food name="sushi" />} />
-          <Route path="/food/pasta" element={<Food name="pasta" />} />
+          <Route path="/food/pasta" element={<Food name="pasta" />} /> */}
         </Routes>
       </BrowserRouter>  
     </div>
