@@ -9,7 +9,7 @@ const FoodNav = ({ foods = defaultFoods }) => {
         //     {foods.map(food => {
         //         <NavLink exact to={`/food/${food}`}>Show me the {food}!</NavLink>
         //     })}
-        // </nav>
+        // </nav> Why doesnt this work?
         <nav className="FoodNav">
             <NavLink exact to="/food/burrito">Burrito</NavLink>
             <NavLink exact to="/food/salad">Salad</NavLink>
