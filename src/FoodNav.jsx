@@ -5,17 +5,17 @@ import './FoodNav.css';
 const defaultFoods = ["burrito", "salad", "sushi", "pasta"]
 const FoodNav = ({ foods = defaultFoods }) => {
     return (
-        // <nav>
-        //     {foods.map(food => {
-        //         <NavLink exact to={`/food/${food}`}>Show me the {food}!</NavLink>
-        //     })}
-        // </nav> Why doesnt this work?
-        <nav className="FoodNav">
-            <NavLink exact to="/food/burrito">Burrito</NavLink>
-            <NavLink exact to="/food/salad">Salad</NavLink>
-            <NavLink exact to="/food/sushi">Sushi</NavLink>
-            <NavLink exact to="/food/pasta">Pasta</NavLink>
-        </nav>
+        <nav>
+            {foods.map(food => (
+                (<NavLink to={`/food/${food}`}>Show me the {food}!</NavLink>)
+            ))}
+        </nav> 
+        // <nav className="FoodNav">
+        //     <NavLink exact to="/food/burrito">Burrito</NavLink>
+        //     <NavLink exact to="/food/salad">Salad</NavLink>
+        //     <NavLink exact to="/food/sushi">Sushi</NavLink>
+        //     <NavLink exact to="/food/pasta">Pasta</NavLink>
+        // </nav>
     );
 };
 
