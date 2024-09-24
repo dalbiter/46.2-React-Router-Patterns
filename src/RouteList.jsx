@@ -12,7 +12,7 @@ const RoutesList = () => {
     return (
         <> 
             <Routes>
-                <Route path="/" element={<Home />}>Home</Route>
+                <Route exact path="/" element={<Home />}>Home</Route>
                 <Route path="/about" element={<About />}>About</Route>
                 <Route path="/contact" element={<Contact />}>Contact</Route>
                 <Route path="/blog" element={<BlogHome />}>BlogHome</Route>

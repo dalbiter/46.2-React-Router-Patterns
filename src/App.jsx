@@ -2,11 +2,12 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Food from './Food';
 import FoodNav from './FoodNav';
 import RouteList from './RouteList';
 import Nav from './Nav';
+import AdminDashboard from './AdminDashboard';
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
           <Route path="/food/sushi" element={<Food name="sushi" />} />
           <Route path="/food/pasta" element={<Food name="pasta" />} /> */}
         </Routes>
-
+        <AdminDashboard />
         <Nav />
         <RouteList />
       </BrowserRouter>  
