@@ -2,7 +2,7 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
-import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 import Food from './Food';
 import FoodNav from './FoodNav';
 import RouteList from './RouteList';
@@ -13,7 +13,6 @@ function App() {
 
   return (
     <div>
-      <BrowserRouter>
       <FoodNav />
         <Routes>
           <Route path="/food/:name" element={<Food />} />
@@ -24,8 +23,7 @@ function App() {
         </Routes>
         <AdminDashboard />
         <Nav />
-        <RouteList />
-      </BrowserRouter>  
+        <RouteList />  
     </div>
   );
 };
